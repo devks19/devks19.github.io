@@ -11,7 +11,6 @@ export function useWheelRouter() {
   useEffect(() => {
     const onWheel = (e) => {
       if (locked.current) return;
-      if (window.innerWidth < 1024) return; // Disable on tablet/mobile for scrolling
 
 
       const direction = e.deltaY > 0 ? "down" : "up";

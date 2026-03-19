@@ -19,7 +19,6 @@ export function useSwipeRouter() {
 
     const onTouchEnd = (e) => {
       if (locked.current) return;
-      if (window.innerWidth < 1024) return; // Disable swipe routing on mobile so page can scroll normally
 
       const endY = e.changedTouches[0].clientY;
       const delta = startY.current - endY;

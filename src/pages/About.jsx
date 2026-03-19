@@ -1,11 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import img1 from "../assets/img1.png";
-// import img2 from "../assets/img2.png";
-import img3 from "../assets/img3.png";
-import img4 from "../assets/img4.png";
+import tech1 from "../assets/tech1.png";
+import tech2 from "../assets/tech2.png";
+import tech3 from "../assets/tech3.png";
 
-const images = [img1, img3, img4];
+const images = [tech1, tech2, tech3];
 
 const stats = [
   // { value: "3+", label: "Years Exp." },
