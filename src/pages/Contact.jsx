@@ -23,6 +23,16 @@ const socials = [
     ),
   },
   {
+    label: "X",
+    href: "https://x.com/sarafkanak19",
+    description: "@sarafkanak19",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+        <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9A12.15 12.15 0 0 1 3.15 4.6a4.28 4.28 0 0 0 1.32 5.71 4.26 4.26 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.2 4.29 4.29 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.97A8.6 8.6 0 0 1 2 19.54 12.13 12.13 0 0 0 8.56 21c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.72 8.72 0 0 0 22.46 6z" />
+      </svg>
+    ),
+  },
+  {
     label: "Email",
     href: "mailto:kssaraf19@gmail.com",
     description: "kssaraf19@gmail.com",
@@ -32,6 +42,7 @@ const socials = [
       </svg>
     ),
   },
+  
 ];
 
 function Contact() {
@@ -166,8 +177,23 @@ function Contact() {
                 className="h-full flex flex-col items-center justify-center text-center p-10 bg-white/5 border border-[#748d7b]/40 rounded-2xl"
               >
                 <span className="text-5xl mb-4">🎉</span>
-                <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-                <p className="text-gray-400">Thanks for reaching out. I'll get back to you within 24 hours.</p>
+                <h3 className="text-2xl font-bold text-white mb-2">You Can Check Out my Resume!</h3>
+                <p className="text-gray-400">This form doesn't implements backend logic for now. but i can implement it for yours.</p><br />
+                <a
+                  href="https://drive.google.com/file/d/1PHTrD7h1t1nvTvJDivaJBp0IdvWveno6/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:border-[#748d7b]/50 hover:bg-[#748d7b]/10 transition-all duration-300 group"
+                >
+                  <span className="text-[#748d7b] group-hover:scale-110 transition-transform duration-200">
+                    📄
+                  </span>
+                  <div>
+                    <p className="text-white text-sm font-semibold">RESUME</p>
+                    <p className="text-gray-500 text-xs">View/Download</p>
+                  </div>
+                  <span className="ml-auto text-gray-600 group-hover:text-[#748d7b] transition-colors duration-200 text-sm">↗</span>
+                </a>
               </motion.div>
             ) : (
               <form

@@ -7,13 +7,18 @@ export function useWheelRouter() {
   const location = useLocation();
 
   const locked = useRef(false);
+  const THRESHOLD = 60;
 
   useEffect(() => {
     const onWheel = (e) => {
+
       if (locked.current) return;
 
+      if (Math.abs(e.deltaY) < THRESHOLD) return;
 
       const direction = e.deltaY > 0 ? "down" : "up";
+
+      
       const index = ROUTES.indexOf(location.pathname);
 
       if (index === -1) return;
@@ -31,7 +36,8 @@ export function useWheelRouter() {
       // unlock after animation time
       setTimeout(() => {
         locked.current = false;
-      }, 600);
+        scrollAccum.current=0;
+      }, 700);
     };
 
     window.addEventListener("wheel", onWheel, { passive: true });

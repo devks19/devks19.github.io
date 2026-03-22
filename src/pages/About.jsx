@@ -32,6 +32,15 @@ const socials = [
     ),
   },
   {
+    label: "LeetCode",
+    href: "https://leetcode.com/u/devks19/",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M9.5 3L3 9.5c-1.5 1.5-1.5 3.9 0 5.4l3.6 3.6c1.5 1.5 3.9 1.5 5.4 0L21 9.5M14 3h4v4" />
+      </svg>
+    ),
+  },
+  {
     label: "Email",
     href: "mailto:kssaraf19@gmail.com",
     icon: (
@@ -40,6 +49,7 @@ const socials = [
       </svg>
     ),
   },
+  
 ];
 
 function About() {
